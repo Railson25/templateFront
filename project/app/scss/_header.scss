@@ -1,0 +1,27 @@
+.header {
+    nav {
+        padding: 30 23px;
+        justify-content: space-around;
+    }
+
+    &__logo {
+        width: 143px;
+        height: 58px;
+    }
+
+    &
+
+    &__menu { //Mobile Menu
+        > span {
+            display: flex;
+            width: 26px;
+            height: 2px;
+            background-color: $bluePrimary;
+
+            &:not(:last-child){
+                margin-bottom: 3px;
+            }
+        }
+    }
+
+}
