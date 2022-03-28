@@ -1,5 +1,13 @@
 .button{
+    justify-content: center;
+    background-color: $whitePrimary;
+    align-items: center;
     display: flex;
+    height: 65;
+    margin-top: 85px;
+    margin-bottom: 120px;
+
+    &__container{
     justify-content: center;
     align-items: center;
     
@@ -8,6 +16,7 @@
     border: none;
     border-radius: 16px;
     background-color: $bluePrimary;
+    }
 
     a {
         color: $whitePrimary;
