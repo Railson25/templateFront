@@ -26,13 +26,21 @@ body.noscroll {
   overflow: hidden;
 }
 
+h1, h2, h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 a, a:visited, a:hover {
   text-decoration: none;
 }
 
 .container {
-  padding-left: 1.125rem;
-  padding-right: 1.125rem;
+  min-width: 440px;
+  padding-top: 2.25rem;
+  padding-right: 1.5rem;
+  padding-bottom: 2.25rem;
+  padding-left: 1.5rem;
 }
 
 .flex {
@@ -141,6 +149,14 @@ a, a:visited, a:hover {
   background-color: #389cd6;
 }
 
+@media (min-width: 64em) {
+  .header > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .header > div button {
   margin-left: 170px;
   width: 190px;
@@ -169,5 +185,179 @@ a, a:visited, a:hover {
   margin-right: 10px;
   font-size: 1rem;
   color: white;
+}
+
+.hero {
+  text-align: center;
+}
+
+@media (min-width: 64em) {
+  .hero {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.hero__image {
+  background-image: url("/project/assets/mobileImages/banner-intibiome-02.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 29.6875rem;
+}
+
+@media (min-width: 64em) {
+  .hero__image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    background-size: 100%;
+    margin-bottom: 2.5rem;
+    background-image: url("/project//assets/desktopImages/banner-hero.png");
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+}
+
+.hero__image-two {
+  background-image: url("/project/assets/mobileImages/icons.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 29.6875rem;
+}
+
+@media (min-width: 64em) {
+  .hero__image-two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    background-size: 100%;
+    margin-bottom: 2.5rem;
+    background-image: url("/project//assets/desktopImages/icons.png");
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 64em) {
+  .hero__text {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+.hero__text h1 {
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+  letter-spacing: 0.62px;
+  color: #389cd6;
+  font-size: 1.9375;
+  font-weight: 1rem;
+  line-height: 1.2;
+}
+
+.hero__text p {
+  line-height: 1.375rem;
+  letter-spacing: 0.32px;
+  margin-bottom: 2.5rem;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-right: 10px;
+  margin-top: 80px;
+  background-color: white;
+}
+
+.card__container {
+  width: 356px;
+  border: 3 transparent;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 356px;
+  height: 530px;
+  background-color: white;
+  border-radius: 16px;
+}
+
+.card__container:not(:first-child) {
+  margin-left: 33px;
+}
+
+.card__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__text {
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+.card__text p {
+  line-height: 1.375rem;
+  letter-spacing: 0.32px;
+  margin-bottom: 2.5rem;
+}
+
+.card__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 73px;
+  border-radius: 0px 0px 16px 16px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.card__footer h1 {
+  color: white;
+  font-size: 1.9375;
+  font-weight: 1rem;
+  line-height: 1.2;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.card__text-two {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=styles.css.map */

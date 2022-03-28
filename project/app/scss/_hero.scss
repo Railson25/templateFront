@@ -1,0 +1,70 @@
+.hero {
+    @include breakpoint-up(large){
+        
+        align-items: center;
+        flex-direction: column;
+        
+        
+        
+    }
+    text-align: center;
+   
+    &__image {
+        @include breakpoint-up(large){
+            display: flex;
+            flex: 1;
+            background-size: 100%;
+            margin-bottom: 2.5rem;
+            background-image: url('/project//assets/desktopImages/banner-hero.png');
+            width: 100%;
+            background-repeat: no-repeat;
+        }
+        
+        background-image: url('/project/assets/mobileImages/banner-intibiome-02.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 29.6875rem;
+        
+    }
+    &__image-two {
+        @include breakpoint-up(large){
+            display: flex;
+            flex: 1;
+            background-size: 100%;
+            margin-bottom: 2.5rem;
+            background-image: url('/project//assets/desktopImages/icons.png');
+            width: 100%;
+            background-repeat: no-repeat;
+        }
+        
+        background-image: url('/project/assets/mobileImages/icons.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 29.6875rem;
+        
+    }
+
+    &__text{
+        @include breakpoint-up(large){
+            flex: 1;
+        }
+        h1 {
+            margin-top: 2.5rem;
+            margin-bottom: 2rem;
+            letter-spacing: 0.62px;
+            color: $bluePrimary;
+            font-size: 1.9375;
+            font-weight: $font-med; 
+            line-height: 1.2;
+        }
+
+        p {
+            line-height: 1.375rem;
+            letter-spacing: 0.32px;
+            margin-bottom: 2.5rem;
+        }
+
+    }
+}
