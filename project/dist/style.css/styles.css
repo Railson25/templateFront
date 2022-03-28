@@ -251,6 +251,31 @@ a, a:visited, a:hover {
   }
 }
 
+.hero__image-three {
+  background-image: url("/project/assets/mobileImages/banner-intibiome-05.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 29.6875rem;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 64em) {
+  .hero__image-three {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    background-size: 100%;
+    margin-bottom: 120px;
+    background-image: url("/project//assets/desktopImages/Asset22.png");
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+}
+
 @media (min-width: 64em) {
   .hero__text {
     -webkit-box-flex: 1;
@@ -289,6 +314,7 @@ a, a:visited, a:hover {
   margin-right: 10px;
   margin-top: 80px;
   background-color: white;
+  margin-bottom: 64px;
 }
 
 .card__container {
@@ -300,9 +326,6 @@ a, a:visited, a:hover {
   height: 530px;
   background-color: white;
   border-radius: 16px;
-}
-
-.card__container:not(:first-child) {
   margin-left: 33px;
 }
 
@@ -359,5 +382,65 @@ a, a:visited, a:hover {
 .card__text-two {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.card-two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 80px;
+  background-color: white;
+  margin-bottom: 64px;
+}
+
+.card-two__container-two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 356px;
+  border: 3 transparent;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 355px;
+  background-color: white;
+  border-radius: 16px;
+  margin-right: 32px;
+}
+
+.card-two__image-two {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-two__text-two {
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+.card-two__text-two p {
+  line-height: 1.375rem;
+  letter-spacing: 0.32px;
+  margin-bottom: 2.5rem;
 }
 /*# sourceMappingURL=styles.css.map */

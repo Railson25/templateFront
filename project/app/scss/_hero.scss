@@ -45,6 +45,25 @@
         min-height: 29.6875rem;
         
     }
+    &__image-three {
+        @include breakpoint-up(large){
+            display: flex;
+            flex: 1;
+            background-size: 100%;
+           margin-bottom: 120px;
+            background-image: url('/project//assets/desktopImages/Asset22.png');
+            width: 100%;
+            background-repeat: no-repeat;
+        }
+        
+        background-image: url('/project/assets/mobileImages/banner-intibiome-05.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 29.6875rem;
+        margin-bottom: 40px;
+        
+    }
 
     &__text{
         @include breakpoint-up(large){
