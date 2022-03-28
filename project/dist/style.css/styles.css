@@ -126,6 +126,12 @@ a, a:visited, a:hover {
   height: 100%;
 }
 
+@media (min-width: 64em) {
+  .header__modal {
+    visibility: hidden;
+  }
+}
+
 .header__modal a {
   color: white;
   padding: 1.5rem;
@@ -322,7 +328,6 @@ a, a:visited, a:hover {
   border: 3 transparent;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  width: 356px;
   height: 530px;
   background-color: white;
   border-radius: 16px;
@@ -398,7 +403,6 @@ a, a:visited, a:hover {
   margin-top: 80px;
   background-color: white;
   margin-bottom: 64px;
-  text-align: center;
 }
 
 .card-two__container-two {
@@ -417,29 +421,29 @@ a, a:visited, a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-left: 33px;
   margin-top: 80px;
-  margin-left: 30px;
-  border: 3;
+  margin-right: 18px;
+  border: 3 transparent;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
   background-color: white;
   border-radius: 16px;
-  border-color: red;
 }
 
 .card-two__image-two {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .card-two__text-two {
@@ -486,5 +490,109 @@ a, a:visited, a:hover {
 
 .button a {
   color: white;
+  font-size: 23px;
+}
+
+.footer {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #389cd6;
+}
+
+@media (min-width: 64em) {
+  .footer {
+    height: 242px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 64em) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.footer a {
+  color: white;
+  padding: 1.5rem;
+  margin-bottom: 50px;
+  display: block;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.32px;
+}
+
+@media (min-width: 64em) {
+  .footer a {
+    padding: 56px;
+  }
+}
+
+.footer__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  background-color: #389cd6;
+}
+
+@media (min-width: 64em) {
+  .footer__images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .footer__images img {
+    margin-top: 74px;
+    margin-bottom: 64px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.footer__images img {
+  margin-top: 56px;
+  margin-bottom: 108px;
 }
 /*# sourceMappingURL=styles.css.map */

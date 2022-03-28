@@ -14,7 +14,7 @@
     border: 3 transparent;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     
-    width: 356px;
+    
     height: 530px;
     background-color: $whitePrimary;
     border-radius: 16px;
@@ -75,10 +75,7 @@
   margin-top: 80px;
   background-color: $whitePrimary;
   margin-bottom: 64px;
-  text-align: center;
-  
-  
-  
+ 
   &__container-two{
     width: 356px;
     height: 232px;
@@ -88,22 +85,24 @@
     align-items: center;
     flex-direction: column;
 
+    margin-left: 33px;
     margin-top: 80px;
-    margin-left: 30px;
-    border: 3 ;
+    margin-right: 18px;
+    
+    border: 3 transparent;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
     
     background-color: $whitePrimary;
     border-radius: 16px;
-    border-color: red;
+   
     
   }
 
   &__image-two {
-    justify-content: center;
-    align-items: center;
     display: flex;
     flex: 1;
+    justify-content: center;
+    align-items: center;
     
   }
 
